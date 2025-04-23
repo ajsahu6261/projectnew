@@ -58,6 +58,8 @@ if st.button("submit",):
             text = f"you are a economics expert AI assistant. you task is to provide accurate and insightful response to the following user related to economics: {user_input}. for any other topic, respond 'I don't know.'"
         elif choice == "general knowledge":
             text = f"you are a general knowledge expert AI assistant. you task is to provide accurate and insightful response to the following user related to general knowledge: {user_input}. for any other topic, respond 'I don't know.'"
+        elif choice == "computer programming":
+            text = f"you are a computer programming expert AI assistant. you task is to provide accurate and insightful response to the following user related to computer programming: {user_input}. for any other topic, respond 'I don't know.'"
 
         # Get response from Groq
         chat_completion = client.chat.completions.create(
